@@ -1,12 +1,13 @@
 package whiteheadcrab.java.springdi.controllers;
 
+import whiteheadcrab.java.springdi.services.GreetingService;
 import whiteheadcrab.java.springdi.services.GreetingServiceImpl;
 
 public class ConstructorInjectedController
 {
-    private GreetingServiceImpl greetingService;
+    private GreetingService greetingService;
 
-    public ConstructorInjectedController(GreetingServiceImpl greetingService)
+    public ConstructorInjectedController(GreetingService greetingService)
     {
         this.greetingService = greetingService;
     }
