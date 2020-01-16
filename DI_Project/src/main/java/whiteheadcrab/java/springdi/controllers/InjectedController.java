@@ -1,5 +1,7 @@
 package whiteheadcrab.java.springdi.controllers;
 
+import whiteheadcrab.java.springdi.services.GreetingServiceImpl;
+
 public class InjectedController
 {
     public GreetingServiceImpl greetingService;
@@ -9,7 +11,7 @@ public class InjectedController
         return getGreetingService().sayGreeting();
     }
 
-    public GreetingServicesImpl getGreetingService()
+    public GreetingServiceImpl getGreetingService()
     {
         return greetingService;
     }
