@@ -8,11 +8,6 @@ public class InjectedController
 
     String sayHello()
     {
-        return getGreetingService().sayGreeting();
-    }
-
-    public GreetingServiceImpl getGreetingService()
-    {
-        return greetingService;
+        return greetingService.sayGreeting();
     }
 }
