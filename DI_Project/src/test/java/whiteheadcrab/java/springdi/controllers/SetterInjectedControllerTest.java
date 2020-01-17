@@ -1,7 +1,7 @@
 package whiteheadcrab.java.springdi.controllers;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 import whiteheadcrab.java.springdi.services.GreetingServiceImpl;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,7 +10,7 @@ public class SetterInjectedControllerTest
 {
     private SetterInjectedController setterInjectedController;
 
-    @BeforeAll
+    @Before
     public void setUp() throws Exception
     {
         this.setterInjectedController = new SetterInjectedController();
