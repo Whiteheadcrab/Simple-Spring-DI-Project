@@ -1,8 +1,10 @@
 package whiteheadcrab.java.springdi.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import whiteheadcrab.java.springdi.services.GreetingService;
-import whiteheadcrab.java.springdi.services.GreetingServiceImpl;
 
+@Controller
 public class ConstructorInjectedController
 {
     private GreetingService greetingService;
@@ -12,7 +14,8 @@ public class ConstructorInjectedController
         this.greetingService = greetingService;
     }
 
-    String sayHello()
+    @Autowired
+    public String sayHello()
     {
         return greetingService.sayGreeting();
     }
