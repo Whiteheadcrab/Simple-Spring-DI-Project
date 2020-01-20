@@ -14,7 +14,7 @@ public class PropertyInjectedControllerTest
     public void setUp() throws Exception
     {
         this.injectedController = new InjectedController();
-        this.injectedController.greetingService = new GreetingServiceImpl();
+        this.injectedController.greetingServiceImpl = new GreetingServiceImpl();
     }
 
     @Test
