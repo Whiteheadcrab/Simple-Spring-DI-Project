@@ -17,6 +17,6 @@ public class MyController
     {
         System.out.println("Hi!");
 
-        return ("foo");
+        return greetingService.sayGreeting();
     }
 }
