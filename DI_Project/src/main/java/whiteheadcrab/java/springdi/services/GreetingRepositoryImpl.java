@@ -1,7 +1,7 @@
 package whiteheadcrab.java.springdi.services;
 
 
-public interface GreetingRepositoryImpl implements GreetingRepositury
+public class GreetingRepositoryImpl implements GreetingRepositury
 {
     @Override
     public String getEnglishGreeting()
