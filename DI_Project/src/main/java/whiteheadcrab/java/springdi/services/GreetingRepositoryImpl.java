@@ -1,7 +1,10 @@
 package whiteheadcrab.java.springdi.services;
 
 
-public class GreetingRepositoryImpl implements GreetingRepositury
+import org.springframework.stereotype.Component;
+
+@Component
+public class GreetingRepositoryImpl implements GreetingRepository
 {
     @Override
     public String getEnglishGreeting()
