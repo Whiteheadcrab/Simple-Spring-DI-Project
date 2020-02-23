@@ -2,7 +2,7 @@ package whiteheadcrab.java.springdi.controllers;
 
 import org.junit.Before;
 import org.junit.Test;
-import whiteheadcrab.java.springdi.services.GreetingServiceImpl;
+import whiteheadcrab.services.GreetingServiceImpl;
 
 import static org.junit.Assert.assertEquals;
 

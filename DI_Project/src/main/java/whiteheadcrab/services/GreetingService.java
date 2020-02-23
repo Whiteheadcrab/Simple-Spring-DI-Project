@@ -1,4 +1,4 @@
-package whiteheadcrab.java.springdi.services;
+package whiteheadcrab.services;
 
 public interface GreetingService
 {

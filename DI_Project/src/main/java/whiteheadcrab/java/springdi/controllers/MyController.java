@@ -1,7 +1,7 @@
 package whiteheadcrab.java.springdi.controllers;
 
 import org.springframework.stereotype.Controller;
-import whiteheadcrab.java.springdi.services.GreetingService;
+import whiteheadcrab.services.GreetingService;
 
 @Controller
 public class MyController
