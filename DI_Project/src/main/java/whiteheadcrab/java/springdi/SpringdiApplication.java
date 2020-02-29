@@ -19,9 +19,5 @@ public class SpringdiApplication {
 
         MyController controller = (MyController) ctc.getBean("myController");
 
-        System.out.println(controller.hello());
-        System.out.println(ctc.getBean(InjectedController.class).sayHello());
-        System.out.println(ctc.getBean(SetterInjectedController.class).sayHello());
-        System.out.println(ctc.getBean(ConstructorInjectedController.class).sayHello());
     }
 }
