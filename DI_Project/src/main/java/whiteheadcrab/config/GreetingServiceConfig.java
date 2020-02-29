@@ -1,6 +1,5 @@
 package whiteheadcrab.config;
 
-import org.graalvm.compiler.lir.CompositeValue;
 import org.springframework.context.annotation.*;
 import whiteheadcrab.services.GreetingRepository;
 import whiteheadcrab.services.GreetingService;

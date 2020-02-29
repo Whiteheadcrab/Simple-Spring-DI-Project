@@ -4,13 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import whiteheadcrab.java.springdi.controllers.ConstructorInjectedController;
-import whiteheadcrab.java.springdi.controllers.InjectedController;
+import whiteheadcrab.examplebean.FakeDataSource;
 import whiteheadcrab.java.springdi.controllers.MyController;
-import whiteheadcrab.java.springdi.controllers.SetterInjectedController;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"whiteheadcrab.services" , "whiteheadcrab.java.springdi"})
+@ComponentScan(basePackages = {"whiteheadcrab.services" , "whiteheadcrab.java.springdi" , "whiteheadcrab.config" })
 public class SpringdiApplication {
 
     public static void main(String[] args)
@@ -19,5 +17,8 @@ public class SpringdiApplication {
 
         MyController controller = (MyController) ctc.getBean("myController");
 
+        FakeDataSource fakeDataSource = (FakeDataSource) ctc.getBean(FakeDataSource.class);
+
+        System.out.println(fakeDataSource.getUsername());
     }
 }
