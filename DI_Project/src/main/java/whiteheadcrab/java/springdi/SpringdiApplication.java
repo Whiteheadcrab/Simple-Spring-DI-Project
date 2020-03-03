@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import whiteheadcrab.examplebean.FakeDataSource;
+import whiteheadcrab.examplebean.FakeJmsBroker;
 import whiteheadcrab.java.springdi.controllers.MyController;
 
 @SpringBootApplication
@@ -20,5 +21,9 @@ public class SpringdiApplication {
         FakeDataSource fakeDataSource = (FakeDataSource) ctc.getBean(FakeDataSource.class);
 
         System.out.println(fakeDataSource.getUsername());
+
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctc.getBean(FakeJmsBroker.class);
+
+        System.out.println(fakeJmsBroker.getUsername());
     }
 }
