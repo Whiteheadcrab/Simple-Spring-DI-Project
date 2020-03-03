@@ -11,7 +11,7 @@ import whiteheadcrab.examplebean.FakeDataSource;
 import whiteheadcrab.examplebean.FakeJmsBroker;
 
 @Configuration
-@PropertySource("classpath:datasource.properties")
+@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
 public class PropertyConfig {
     @Autowired
     Environment env;
@@ -25,13 +25,13 @@ public class PropertyConfig {
     @Value("${whiteheadcrab.dburl}")
     String url;
 
-    @Value("${whitehadcrab.jms.username}")
+    @Value("${whiteheadcrab.jms.username}")
     String jmsUsername;
 
-    @Value("${whitehadcrab.jms.password}")
+    @Value("${whiteheadcrab.jms.password}")
     String jmsPassword;
 
-    @Value("${whitheadcrab.jms.url}")
+    @Value("${whiteheadcrab.jms.url}")
     String jmsUrl;
 
     @Bean
