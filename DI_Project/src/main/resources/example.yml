@@ -1,0 +1,39 @@
+# this is comment
+
+name: Nikita
+
+names: #Comment
+    - Nikita
+    - John
+    - Diego
+
+pound_sign: "#"  adsf
+
+
+book:
+    author: Joe Buck
+    publisher: random house
+
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #No , false , FALSE also will work
+
+string_val: "This is it's quote"
+
+colon_string: "my courses: one two three"
+
+include_new_lines: |
+  df hdu fhuidfh
+  du ifhd uif
+  fji djfi jdf
+
+
+ignore_new_lines: >
+  this is
+  just one long
+  string
