@@ -1,0 +1,5 @@
+whiteheadcrab:
+  jms:
+    username: JMS Username
+    password: JMS pass
+    url: Some URLx
