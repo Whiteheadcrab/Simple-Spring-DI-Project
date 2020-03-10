@@ -3,3 +3,10 @@ whiteheadcrab:
     username: JMS Username
     password: JMS pass
     url: Some URLx
+
+---
+spring:
+  profiles: default
+whiteheadcrab:
+  jms:
+    username: JMS Username $$$$$
